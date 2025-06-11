@@ -3,18 +3,18 @@ import { Carousel } from 'antd';
 import Image from 'next/image';
 
 const carouselImages = [
-//   {
-//     src: "/482321154_1156355746277713_2950412439530384056_n.jpg", 
-//     alt: "Carousel Image 2",
-//   },
   {
-    src: "/template.png",
-    alt: "Carousel Image 3",
+    src: "/admission.jpg", 
+    alt: "Carousel Image 2",
   },
-  {
-    src: "/template2.png",
-    alt: "Carousel Image 4",
-  }
+  // {
+  //   src: "/template.png",
+  //   alt: "Carousel Image 3",
+  // },
+  // {
+  //   src: "/template2.png",
+  //   alt: "Carousel Image 4",
+  // }
 ];
 
 export default function CarouselComponent() {

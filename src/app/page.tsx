@@ -6,17 +6,10 @@ import { Layout } from "antd";
 import CarouselComponent from '@/components/Carousel';
 import Professions from '@/components/Professions';
 import Admissions from '@/components/Admissions';
+import FooterComp from '@/components/Footer';
+import Post from '@/components/Post';
 
-const { Header, Footer, Content } = Layout;
 
-const headerStyle: React.CSSProperties = {
-  position: 'sticky',
-  top: 0,
-  zIndex: 100,
-  width: '100%',
-  backgroundColor: '#fff',
-  boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)',
-};
 
 const layoutStyle: React.CSSProperties = {
   display: 'flex',
@@ -40,9 +33,14 @@ export default function Home() {
 
       <Admissions />
 
-      <Footer className="text-center bg-gray-100">
-        MLSRI ©{new Date().getFullYear()}
-      </Footer>
+      <Post 
+        src='/logo.png' 
+        title='ХНХИС' 
+        text='1993 оноос эхлэн дээд боловсролын сургалт явуулж буй Хөдөлмөр, нийгмийн харилцааны дээд сургууль нь Монгол Улсад хөдөлмөр, 
+        нийгмийн харилцааны чиглэлээр мэргэшсэн боловсон хүчин бэлтгэхэд тэргүүлэх үүрэг гүйцэтгэж ирсэн. Тус сургууль нь хөдөлмөрийн эдийн засаг, хөдөлмөрийн аюулгүй байдал, эрүүл ахуй, нийгмийн хамгаалал, хүний нөөц, нягтлан бодох бүртгэл, бизнесийн удирдлага зэрэг салбарт шаардлагатай мэдлэг, ур чадварыг эзэмшүүлж, онол, практикийг хослуулан, олон улсын түвшинд өрсөлдөх чадвартай, 
+        мэргэжлийн ёс зүйтэй, хариуцлагатай мэргэжилтэн бэлтгэхийг эрхэм зорилгоо болгодог.'
+      /> 
+      <FooterComp />
     </Layout>
   );
 }

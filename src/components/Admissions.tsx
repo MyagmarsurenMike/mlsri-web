@@ -9,15 +9,15 @@ export default function Admissions() {
       <div
         className="flex flex-col justify-center w-full p-4 md:p-8 bg-gray-100"
         style={{
-          backgroundImage: "url('/template.png')",
+          backgroundImage: "url('/admission_banner.png')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          minHeight: '400px',
+          minHeight: '500px',
         }}
       >
-        <div className="flex flex-col justify-center bg-white bg-opacity-80 p-6 rounded-xl h-full w-full md:w-1/4 ml-4 md:ml-12">
-            <h2 className="text-3xl font-bold text-left">Элсэлт</h2>
-            <p className="text-lg text-left my-4">
+        <div className="flex flex-col justify-center bg-white bg-opacity-80 px-6 mt-12 my-12 py-12 rounded-xl h-fit w-full md:w-1/4 ml-4 md:ml-12 md:py-4">
+            <h2 className="text-4xl font-bold text-left">Элсэлт</h2>
+            <p className="text-xl text-left my-4">
                 Манай сургуулийн элсэлтийн үйл явцын талаар дэлгэрэнгүй мэдээлэл авахыг хүсвэл доорх холбоосоор орно уу.
             </p>
             <GradientButton size="large" className='w-fit font-bold' href='/'>

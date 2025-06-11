@@ -3,3 +3,65 @@
 body {
     background-color: white;
 }
+
+.menu-toggle-button {
+    display: flex;
+    align-items: center;
+  }
+@media (min-width: 1024px) {
+    .menu-toggle-button {
+      display: none;
+    }
+}
+
+.navbar-menu {
+    display: none; /* Hidden by default on all screens */
+    border-bottom: none !important; /* Remove the bottom border for horizontal menu */
+    font-size: medium;
+}
+
+@media (min-width: 1024px) {
+    .navbar-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+    .navbar-menu {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        display: none; /* Explicitly hidden on tablet */
+    }
+}
+
+.text-a{
+    color: white; /* Default link color */
+    text-decoration: none;
+}
+
+a{
+    color: black;
+}
+
+.sectionStyle {
+    background: #fff;
+    padding: 24px;
+    min-height: 280px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: grid; /* Assuming a grid layout; change to 'flex' if needed */
+    gap: 16px; /* Adds vertical gap between grid rows */
+}
+
+.iconStyle{
+    font-size: large;
+    margin-right: 12px;
+    color: #1890ff;
+}
+
